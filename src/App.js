@@ -1,23 +1,22 @@
-import "./App.scss";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import MainLayout from "./Layouts/MainLayout";
+import AboutPage from "./Pages/AboutPage";
+import AnnouncePage from "./Pages/AnnouncePage";
+import ErrorPage from "./Pages/ErrorPage";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="annoncePage" element={<AnnouncePage />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
