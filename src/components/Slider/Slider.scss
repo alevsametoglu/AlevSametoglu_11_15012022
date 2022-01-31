@@ -1,0 +1,29 @@
+.slider {
+  height: 415px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  .icon-navigation {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20%;
+    i {
+      font-size: 60px;
+    }
+  }
+  .slider-no {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

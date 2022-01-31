@@ -1,0 +1,28 @@
+.card-location {
+  width: 340px;
+  height: 340px;
+  position: relative;
+  border-radius: 10px;
+  background-color: green;
+
+  padding: 0px;
+  .img-location {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .title-location {
+    color: black;
+    width: 300px;
+    height: 52px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
