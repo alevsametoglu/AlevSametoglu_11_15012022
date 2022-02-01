@@ -1,4 +1,5 @@
 .slider {
+  position: relative;
   height: 415px;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,19 +10,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: white;
   .icon-navigation {
     width: 98%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20%;
+    place-items: center;
+
     i {
+      cursor: pointer;
       font-size: 60px;
     }
   }
   .slider-no {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
