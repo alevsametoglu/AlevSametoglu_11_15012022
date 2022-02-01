@@ -7,17 +7,30 @@ const HomePage = () => {
     <main className="home-page">
       <Banner />
       <section className="card-list">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          title="Appartement cosy"
+          url="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+        />
+        <Card
+          title="Appartement cosy"
+          url="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+        />
+        <Card
+          title="Appartement cosy"
+          url="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+        />
+        <Card
+          title="Appartement cosy"
+          url="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+        />
+        <Card
+          title="Appartement cosy"
+          url="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+        />
+        <Card
+          title="Appartement cosy"
+          url="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+        />
       </section>
     </main>
   );
