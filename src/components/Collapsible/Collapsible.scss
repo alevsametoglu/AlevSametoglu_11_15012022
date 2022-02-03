@@ -6,7 +6,7 @@
   .collapsible-button {
     background-color: $colorPrimary;
     color: white;
-    border-radius: 10px;
+
     cursor: pointer;
     width: 100%;
     display: flex;
@@ -16,7 +16,6 @@
     font-weight: 500;
     line-height: 26px;
     text-align: left;
-
     .title-collapsible {
       padding-left: 20px;
       padding-top: 5px;
@@ -28,12 +27,15 @@
 }
 .content {
   padding: 0 18px;
-  display: block;
+  display: none;
+  min-height: 60px;
+  margin-bottom: 10px;
   overflow: hidden;
   background-color: $colorSecondary;
   left: 0px;
   top: 42px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
   color: $colorPrimary;
+  p {
+    white-space: pre-line;
+  }
 }
