@@ -10,7 +10,7 @@ const Banner = (props) => {
       url("./assets/images/Banner.svg")`,
       }}
     >
-      <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
+      <h1 className="banner-title">{props.text}</h1>
     </div>
   );
 };

@@ -4,22 +4,20 @@ import { Tag, Profile } from "..";
 import PropTypes from "prop-types";
 
 const Host = (props) => {
+  console.log(props);
   return (
     <div className="detail">
       <div className="info">
         <div className="title">{props.title}</div>
         <div className="location">{props.location}</div>
         <div className="tags">
-          <Tag />
-          <Tag />
-          <Tag />
+          {props.tags.map((tag, index) => {
+            return <Tag key={`tag-${index}`} name={tag} />;
+          })}
         </div>
       </div>
       <div>
-        <Profile
-          name="Nathalie Jean"
-          url="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
-        />
+        <Profile rating={props.rating} name={props.name} cover={props.cover} />
       </div>
     </div>
   );

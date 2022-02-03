@@ -4,16 +4,17 @@ import PropTypes from "prop-types";
 import "./Profile.scss";
 
 export const Profile = (props) => {
+  console.log(props);
   return (
     <div className="profile">
       <div className="profile-info">
         <div className="profile-name">{props.name}</div>
         <div className="profile-img">
-          <img src={props.url} alt="profil" />
+          <img src={props.cover} alt="profil" />
         </div>
       </div>
       <div className="stars">
-        <Rating value={3} />
+        <Rating value={props.rating} />
       </div>
     </div>
   );
@@ -21,6 +22,6 @@ export const Profile = (props) => {
 
 Profile.propTypes = {
   name: PropTypes.string,
-  url: PropTypes.string,
+  cover: PropTypes.string,
 };
 export default Profile;
