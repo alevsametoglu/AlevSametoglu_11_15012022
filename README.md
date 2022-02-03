@@ -6,9 +6,9 @@
 
 ## Compétances développées
 
-Initialisation une application web avec ReactJS< br >
-Créer des composants avec React (Type class imposé) < br >
-Développer les routes d'une application web avec React Router
+- Initialisation une application web avec ReactJS
+- Créer des composants avec React (Type class imposé)
+- Développer les routes d'une application web avec React Router
 
 ## Lancer en local
 
