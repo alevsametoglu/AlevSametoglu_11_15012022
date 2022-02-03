@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.99ab027d.css",
+    "main.js": "/kasa/static/js/main.d323f984.js",
+    "static/js/787.0ce615c0.chunk.js": "/kasa/static/js/787.0ce615c0.chunk.js",
+    "index.html": "/kasa/index.html",
+    "main.99ab027d.css.map": "/kasa/static/css/main.99ab027d.css.map",
+    "main.d323f984.js.map": "/kasa/static/js/main.d323f984.js.map",
+    "787.0ce615c0.chunk.js.map": "/kasa/static/js/787.0ce615c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99ab027d.css",
+    "static/js/main.d323f984.js"
+  ]
+}
