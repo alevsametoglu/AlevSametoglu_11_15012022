@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
-          <Route path="annoncePage" element={<AnnouncePage />} />
+          <Route path="announce/:id" element={<AnnouncePage />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
