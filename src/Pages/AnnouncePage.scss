@@ -1,7 +1,13 @@
 .announce-page {
+  margin: auto;
   .announce-collapsible {
     display: flex;
     width: 94%;
     margin: auto;
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
   }
 }

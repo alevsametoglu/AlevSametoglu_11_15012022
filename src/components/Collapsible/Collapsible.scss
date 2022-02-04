@@ -1,12 +1,11 @@
 @import "../scss/variables.scss";
 .collapsible {
-  height: 52px;
   width: 94%;
   margin: 20px;
+
   .collapsible-button {
     background-color: $colorPrimary;
     color: white;
-
     cursor: pointer;
     width: 100%;
     display: flex;
@@ -16,13 +15,16 @@
     font-weight: 500;
     line-height: 26px;
     text-align: left;
-    .title-collapsible {
-      padding-left: 20px;
-      padding-top: 5px;
+    @media only screen and (max-width: 480px) {
+      border-radius: 5px;
     }
-    i {
-      padding: 10px;
-    }
+  }
+  .title-collapsible {
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+  i {
+    padding: 10px;
   }
 }
 .content {

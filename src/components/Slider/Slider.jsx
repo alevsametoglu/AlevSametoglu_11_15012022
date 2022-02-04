@@ -25,16 +25,14 @@ const Slider = (props) => {
           className="fas fa-chevron-right"
           onClick={() =>
             setImageIndex(
-              imageIndex < props.images.length - 1
-                ? imageIndex + 1
-                : props.images.length - imageIndex
+              imageIndex < props.images.length - 1 ? imageIndex + 1 : 0
             )
           }
         ></i>
       </div>
       <div className="slider-no">
         <p>
-          {imageIndex}/{props.images.length - 1}
+          {imageIndex + 1}/{props.images.length}
         </p>
       </div>
     </div>

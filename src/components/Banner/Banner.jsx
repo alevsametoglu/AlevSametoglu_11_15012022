@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.scss";
+import "./Banner.png";
 
 const Banner = (props) => {
   return (
@@ -7,7 +8,7 @@ const Banner = (props) => {
       className="banner"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("./assets/images/Banner.svg")`,
+      url("${process.env.PUBLIC_URL}/assets/images/Banner.png")`,
       }}
     >
       <h1 className="banner-title">{props.text}</h1>

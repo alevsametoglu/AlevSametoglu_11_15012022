@@ -8,10 +8,6 @@ const Collapsible = (props) => {
   return (
     <div className="collapsible">
       <div
-        style={{
-          borderTopLeftRadius: props.radius || 0,
-          borderTopRightRadius: props.radius || 0,
-        }}
         className="collapsible-button"
         onClick={() => setShowDetail(!showDetail)}
       >
@@ -25,9 +21,6 @@ const Collapsible = (props) => {
         className="content"
         style={{
           display: showDetail ? "block" : "none",
-
-          borderBottomLeftRadius: props.radius || 0,
-          borderBottomRightRadius: props.radius || 0,
         }}
       >
         <p>{props.description}</p>

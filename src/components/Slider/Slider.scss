@@ -12,6 +12,9 @@
   align-items: center;
   justify-content: center;
   color: white;
+  @media only screen and (max-width: 480px) {
+    height: 335px;
+  }
   .icon-navigation {
     width: 98%;
     display: flex;
@@ -22,6 +25,9 @@
     i {
       cursor: pointer;
       font-size: 60px;
+      @media only screen and (max-width: 480px) {
+        font-size: 40px;
+      }
     }
   }
   .slider-no {

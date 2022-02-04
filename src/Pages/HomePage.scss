@@ -1,6 +1,7 @@
 .home-page {
   max-width: 90%;
   margin: auto;
+
   .card-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -11,5 +12,12 @@
     margin-top: 40px;
     border-radius: 25px;
     padding-top: 56px;
+    @media only screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+      padding: 0px;
+      margin-bottom: 10px;
+      background-color: #ffffff;
+      gap: 20px;
+    }
   }
 }

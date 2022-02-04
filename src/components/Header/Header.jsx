@@ -1,21 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import "./Header.scss";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import logo from "./NavbarLogo.svg";
+console.log(useLocation);
+
 const Header = () => {
   return (
     <header className="header-page">
       <Link to="/">
-        <img
-          className="header-img"
-          alt="kasa logo"
-          src="./assets/images/NavbarLogo.svg
-      "
-        ></img>
+        <img className="header-img" alt="kasa logo" src={logo}></img>
       </Link>
 
       <nav className="navbar">
-        <Link to="/">Acceuil</Link>
-        <Link to="about">A Propos</Link>
+        <Link to="/">ACCEUIL</Link>
+        <Link to="about">A PROPOS</Link>
       </nav>
     </header>
   );
