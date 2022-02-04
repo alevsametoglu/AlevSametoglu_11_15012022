@@ -1,26 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { Host, Slider, Collapsible } from "../components";
 import "./AnnouncePage.scss";
 import Api from "../Api/Api";
 
 const AnnouncePage = () => {
   const params = useParams();
+  const navigate = useNavigate();
   const [announce, setAnnounce] = useState();
 
   useEffect(() => {
     const _announce = Api.getDataById(params.id);
-    if (_announce) {
-      setAnnounce(_announce);
-      console.log(_announce);
-    } else {
-      //TODO: navigate to error page
-    }
+    setAnnounce(_announce);
+    if (!_announce) navigate("/error");
   }, [params.id]);
 
-  return !announce ? (
-    <></>
-  ) : (
+  return !!announce ? (
     <div className="announce-page">
       <Slider images={announce.pictures} />
       <div className="announce-infos">
@@ -46,6 +41,8 @@ const AnnouncePage = () => {
         />
       </div>
     </div>
+  ) : (
+    <></>
   );
 };
 

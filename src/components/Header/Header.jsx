@@ -2,9 +2,9 @@ import "./Header.scss";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "./NavbarLogo.svg";
-console.log(useLocation);
 
 const Header = () => {
+  const location = useLocation();
   return (
     <header className="header-page">
       <Link to="/">
@@ -12,8 +12,23 @@ const Header = () => {
       </Link>
 
       <nav className="navbar">
-        <Link to="/">ACCEUIL</Link>
-        <Link to="about">A PROPOS</Link>
+        <Link
+          style={{
+            textDecoration: location.pathname === "/" ? "underline" : undefined,
+          }}
+          to="/"
+        >
+          ACCEUIL
+        </Link>
+        <Link
+          style={{
+            textDecoration:
+              location.pathname === "/about" ? "underline" : undefined,
+          }}
+          to="about"
+        >
+          A PROPOS
+        </Link>
       </nav>
     </header>
   );
