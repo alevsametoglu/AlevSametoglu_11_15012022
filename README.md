@@ -2,7 +2,7 @@
 
 ## Aplication
 
-[demo]("http://alevsametoglu.github.io/kasa/#/")
+("http://alevsametoglu.github.io/kasa/#/")
 
 ## Compétances développées
 
