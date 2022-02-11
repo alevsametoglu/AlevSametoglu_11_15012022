@@ -12,29 +12,33 @@ const Slider = (props) => {
         url(${props.images[imageIndex]})`,
       }}
     >
-      <div className="icon-navigation">
-        <i
-          className="fas fa-chevron-left"
-          onClick={() =>
-            setImageIndex(
-              imageIndex > 0 ? imageIndex - 1 : props.images.length - 1
-            )
-          }
-        ></i>
-        <i
-          className="fas fa-chevron-right"
-          onClick={() =>
-            setImageIndex(
-              imageIndex < props.images.length - 1 ? imageIndex + 1 : 0
-            )
-          }
-        ></i>
-      </div>
-      <div className="slider-no">
-        <p>
-          {imageIndex + 1}/{props.images.length}
-        </p>
-      </div>
+      {props.images.length > 1 && (
+        <div className="icon-navigation">
+          <i
+            className="fas fa-chevron-left"
+            onClick={() =>
+              setImageIndex(
+                imageIndex > 0 ? imageIndex - 1 : props.images.length - 1
+              )
+            }
+          ></i>
+          <i
+            className="fas fa-chevron-right"
+            onClick={() =>
+              setImageIndex(
+                imageIndex < props.images.length - 1 ? imageIndex + 1 : 0
+              )
+            }
+          ></i>
+        </div>
+      )}
+      {props.images.length > 1 && (
+        <div className="slider-no">
+          <p>
+            {imageIndex + 1}/{props.images.length}
+          </p>
+        </div>
+      )}
     </div>
   );
 };
