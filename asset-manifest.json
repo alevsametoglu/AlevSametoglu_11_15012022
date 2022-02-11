@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/AlevSametoglu_11_15012022/static/css/main.44e10601.css",
-    "main.js": "/AlevSametoglu_11_15012022/static/js/main.9bb019cd.js",
+    "main.js": "/AlevSametoglu_11_15012022/static/js/main.bea82756.js",
     "static/js/787.c44a9c39.chunk.js": "/AlevSametoglu_11_15012022/static/js/787.c44a9c39.chunk.js",
     "static/media/Banner.png": "/AlevSametoglu_11_15012022/static/media/Banner.22c1ed56b9b513f63a73.png",
     "static/media/NavbarLogo.svg": "/AlevSametoglu_11_15012022/static/media/NavbarLogo.925f72994a034e5023a28463f90d8b24.svg",
     "static/media/FooterLogo.svg": "/AlevSametoglu_11_15012022/static/media/FooterLogo.ee689fd9409d1b5a898b4247819d8a00.svg",
     "index.html": "/AlevSametoglu_11_15012022/index.html",
     "main.44e10601.css.map": "/AlevSametoglu_11_15012022/static/css/main.44e10601.css.map",
-    "main.9bb019cd.js.map": "/AlevSametoglu_11_15012022/static/js/main.9bb019cd.js.map",
+    "main.bea82756.js.map": "/AlevSametoglu_11_15012022/static/js/main.bea82756.js.map",
     "787.c44a9c39.chunk.js.map": "/AlevSametoglu_11_15012022/static/js/787.c44a9c39.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44e10601.css",
-    "static/js/main.9bb019cd.js"
+    "static/js/main.bea82756.js"
   ]
 }
